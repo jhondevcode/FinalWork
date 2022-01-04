@@ -7,7 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import localeEs from '@angular/common/locales/es-PE';
-import { registerLocaleData } from '@angular/common'
+import { registerLocaleData } from '@angular/common';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 registerLocaleData(localeEs);
 
 @NgModule({
@@ -19,7 +20,8 @@ registerLocaleData(localeEs);
     AppRoutingModule,
     ComponentsModule,
     SharedModule,
-    DataModule
+    DataModule,
+    BrowserAnimationsModule
   ],
   providers: [
     {
